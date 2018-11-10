@@ -12,10 +12,17 @@ class LoginForm extends React.Component {
 
   handleInputChange = event =>{
     this.setState({
+<<<<<<< HEAD
       [event.target.name]: event.target.value,
     });
   }
   
+=======
+      [this.target.name]: event.target.value,
+    });
+  }
+  }
+>>>>>>> a20b374174bd72e66ddcf29d4ea7a5cf12314e62
    handleSubmit = event => {
     event.preventDefault();
      if (this.state.username && this.state.password) {
@@ -28,13 +35,21 @@ class LoginForm extends React.Component {
         <div>
           <label>
             Username
+<<<<<<< HEAD
             <input id="username" name="username" type="text" value={this.state.username} onChange={this.handleInputChange} />
+=======
+            <input id="username" name="username" type="text" onChange={this.handleInputChange} />
+>>>>>>> a20b374174bd72e66ddcf29d4ea7a5cf12314e62
           </label>
         </div>
         <div>
           <label>
             Password
+<<<<<<< HEAD
             <input id="password" name="password" type="password" value={this.state.password} onChange={this.handleInputChange}/>
+=======
+            <input id="password" name="password" type="password" onChange={this.handleInputChange}/>
+>>>>>>> a20b374174bd72e66ddcf29d4ea7a5cf12314e62
           </label>
         </div>
         <div>
